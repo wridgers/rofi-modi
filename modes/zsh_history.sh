@@ -12,7 +12,7 @@ if [ $# -eq 0 ]
 then
     cat ~/.zsh_history \
         | cut -c 16- \
-        | grep -v -f ${__dir}/ignore_history \
+        | grep -v -f ${__dir}/../ignore_history \
         | sort \
         | uniq -c \
         | sort -nr \
