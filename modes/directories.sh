@@ -10,11 +10,11 @@ TERMINAL=gnome-terminal
 
 if [ $# -eq 0 ]
 then
-    if [ -e ${__dir}/.directories.db ]
+    if [ -e ${__dir}/../.cache/directories.db ]
     then
-        cat ${__dir}/.directories.db
+        cat ${__dir}/../.cache/directories.db
     else
-        find ~ -type d | grep -v -f ${__dir}/ignore_paths
+        find ~ -type d | grep -v -f ${__dir}/../ignore_paths
     fi
 else
     DIRECTORY=$@
