@@ -21,6 +21,7 @@
 /\.npm
 /\.nv
 /\.oh-my-zsh
+/\.pyc$
 /\.python-eggs
 /\.stack
 /\.steam
@@ -29,6 +30,7 @@
 /bower_components/
 /build/
 /env/
+/env3/
 /node_modules/
 /site-packages/
 /vendor/
